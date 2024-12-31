@@ -18,6 +18,7 @@ function App() {
       <div className="list">
           <h4>{글제목}</h4>
           <p>불꽃타입</p>
+          <p>깃 허브 테스트</p>
       </div>
     </div>
   );
