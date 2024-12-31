@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+
+  let post = '포켓몬';
+  let [글제목,b] =  useState('포켓몬 추천'); // state : 변동시 자동으로 html에 반영되게 만들고 싶을 때 사용
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.sd
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="black-nav">
+        <h4 style={{color : 'purple', fontSize: '40px'}}>React practice</h4>
+      </div>
+      
+      <h4 style={{fontSize: '30px'}}>{post}</h4>
+
+      <div className="list">
+          <h4>{글제목}</h4>
+          <p>불꽃타입</p>
+      </div>
     </div>
   );
 }
